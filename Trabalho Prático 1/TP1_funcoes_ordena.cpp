@@ -23,7 +23,7 @@ void Bubble_Sort(string Lista[], int tamanho) // Ordem crescente
     }
     
     system("cls");
-    cout << "\n Vetor pós ordenação: \n" << endl;
+    cout << "\n Vetor pós ordenação: " << endl;
     cout << "[";
     for (int i = 0; i < tamanho; i++)
     {

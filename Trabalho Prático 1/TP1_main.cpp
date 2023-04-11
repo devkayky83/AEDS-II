@@ -45,7 +45,10 @@ int main()
         cout << "\n - Escolha o arquivo que deseja ordenar: ";
         cin >> escolha_insertionsort;
 
-        if (escolha_insertionsort == 1 || escolha_insertionsort == 2 || escolha_insertionsort == 3)
+        if (escolha_insertionsort == 1 || escolha_insertionsort == 2 || escolha_insertionsort == 3 ||
+            escolha_insertionsort == 4 || escolha_insertionsort == 5 || escolha_insertionsort == 6 ||
+            escolha_insertionsort == 7 || escolha_insertionsort == 8 || escolha_insertionsort == 9 ||
+            escolha_insertionsort == 10 || escolha_insertionsort == 11)
         {
           AbrirArquivo_Insertionsort(result, escolha_insertionsort);
         }
@@ -56,7 +59,10 @@ int main()
         cout << "\n - Escolha o arquivo que deseja ordenar: ";
         cin >> escolha_selectionsort;
 
-        if (escolha_selectionsort == 1 || escolha_selectionsort == 2 || escolha_selectionsort == 3)
+        if (escolha_selectionsort == 1 || escolha_selectionsort == 2 || escolha_selectionsort == 3 ||
+            escolha_selectionsort == 4 || escolha_selectionsort == 5 || escolha_selectionsort == 6 ||
+            escolha_selectionsort == 7 || escolha_selectionsort == 8 || escolha_selectionsort == 9 ||
+            escolha_selectionsort == 10 || escolha_selectionsort == 11)
         {
           AbrirArquivo_Selectionsort(result, escolha_selectionsort);
         }

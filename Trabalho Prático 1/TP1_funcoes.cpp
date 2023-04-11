@@ -4,6 +4,7 @@
 #include <string>
 #include <ctime>
 #include <time.h>
+#include <iomanip>
 #include "TP1_funcoes_ordena.cpp"
 #include "TP1.hpp"
  
@@ -40,7 +41,8 @@ void MENU_Instancias()
     cout << "\n\t    8 - ListaInversamenteOrdenada-10000.txt";
     cout << "\n\t    9 - ListaOrdenada-10000.txt";
     cout << "\n\t   10 - ListaQuaseOrdenada-10000.txt";
-    cout << "\n\t   11 - ListaAleatoria-100000.txt" << endl;
+    cout << "\n\t   11 - ListaAleatoria-100000.txt";
+    cout << "\n\t    0 - Menu Principal" << endl;
     cout << "\t ---------------------------------------------------\n";
 }
 
@@ -127,7 +129,7 @@ void AbrirArquivo_Bubblesort(string vector[], int escolha_bubblesort)
     Bubble_Sort(vector, tamanho);
     inicio = clock() - inicio;
 
-    cout << "\n Tempo gasto: " << ((float)inicio) / CLOCKS_PER_SEC << " segundos" << endl; 
+    cout << "\n Tempo gasto: " << ((float)inicio) / CLOCKS_PER_SEC << " segundos/milissegundos" << endl; 
 
     system("pause");
 }
@@ -155,6 +157,46 @@ void AbrirArquivo_Insertionsort(string vector[], int escolha_insertionsort)
             arquivoE.open("DicionarioInversamenteOrdenado-29855.txt");
             tamanho = 29855;
         break;
+
+        case 4:
+            arquivoE.open("ListaOrdenada-1000.txt");
+            tamanho = 1000;
+        break;
+
+        case 5:
+            arquivoE.open("ListaInversamenteOrdenada-1000.txt");
+            tamanho = 1000;
+        break;
+
+        case 6:
+            arquivoE.open("ListaQuaseOrdenada-1000.txt");
+            tamanho = 1000;
+        break;
+
+        case 7:
+            arquivoE.open("ListaAleatoria-10000.txt");
+            tamanho = 10000;
+        break;
+
+        case 8:
+            arquivoE.open("ListaInversamenteOrdenada-10000.txt");
+            tamanho = 10000;
+        break;
+
+        case 9:
+            arquivoE.open("ListaOrdenada-10000.txt");
+            tamanho = 10000;
+        break;
+
+        case 10:
+            arquivoE.open("ListaQuaseOrdenada-10000.txt");
+            tamanho = 10000;
+        break;
+
+        case 11:
+            arquivoE.open("ListaAleatoria-100000.txt");
+            tamanho = 100000;
+        break;
     }
 
     if (arquivoE.is_open())
@@ -176,7 +218,7 @@ void AbrirArquivo_Insertionsort(string vector[], int escolha_insertionsort)
     InsertionSort(vector, tamanho);
     inicio = clock() - inicio;
 
-    cout << "\n Tempo total gasto: " << ((float)inicio) / CLOCKS_PER_SEC << " segundos" << endl;
+    cout << "\n Tempo total gasto: " << ((float)inicio) / CLOCKS_PER_SEC << " segundos/milissegundos" << endl;
 
     system("pause");
 }
@@ -204,6 +246,46 @@ void AbrirArquivo_Selectionsort(string vector[], int escolha_selectionsort)
             arquivoE.open("DicionarioInversamenteOrdenado-29855.txt");
             tamanho = 29855;
         break;
+
+        case 4:
+            arquivoE.open("ListaOrdenada-1000.txt");
+            tamanho = 1000;
+        break;
+
+        case 5:
+            arquivoE.open("ListaInversamenteOrdenada-1000.txt");
+            tamanho = 1000;
+        break;
+
+        case 6:
+            arquivoE.open("ListaQuaseOrdenada-1000.txt");
+            tamanho = 1000;
+        break;
+
+        case 7:
+            arquivoE.open("ListaAleatoria-10000.txt");
+            tamanho = 10000;
+        break;
+
+        case 8:
+            arquivoE.open("ListaInversamenteOrdenada-10000.txt");
+            tamanho = 10000;
+        break;
+
+        case 9:
+            arquivoE.open("ListaOrdenada-10000.txt");
+            tamanho = 10000;
+        break;
+
+        case 10:
+            arquivoE.open("ListaQuaseOrdenada-10000.txt");
+            tamanho = 10000;
+        break;
+
+        case 11:
+            arquivoE.open("ListaAleatoria-100000.txt");
+            tamanho = 100000;
+        break;
     }
 
     if (arquivoE.is_open())
@@ -225,7 +307,7 @@ void AbrirArquivo_Selectionsort(string vector[], int escolha_selectionsort)
     SelectionSort(vector, tamanho);
     inicio = clock() - inicio;
 
-    cout << "\n Tempo total gasto: " << ((float)inicio) / CLOCKS_PER_SEC << " segundos" << endl;
+    cout << "\n Tempo total gasto: " << ((float)inicio) / CLOCKS_PER_SEC << " segundos/milissegundos" << endl;
 
     system("pause");
 }
