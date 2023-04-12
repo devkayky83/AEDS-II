@@ -14,8 +14,7 @@ int main()
   UINT CPAGE_DEFAULT = GetConsoleOutputCP();
   SetConsoleOutputCP(CPAGE_UTF8);
  
-  int escolha, escolha_bubblesort, escolha_insertionsort, 
-  escolha_selectionsort;
+  int escolha, escolha_arquivo;
   vector <string> result;
 
   MENU();
@@ -24,41 +23,18 @@ int main()
 
   do
   {
-    switch(escolha)
+    if (escolha >= 1 && escolha <= 6)
     {
-      case 1:
         MENU_Instancias();
         cout << "\n - Escolha o arquivo que deseja ordenar: ";
-        cin >> escolha_bubblesort;
+        cin >> escolha_arquivo;
       
-        if (escolha_bubblesort >= 1 && escolha_bubblesort <= 14)
+        if (escolha_arquivo >= 1 && escolha_arquivo <= 14)
         {
-           AbrirArquivo_Bubblesort(result, escolha_bubblesort);
+           AbrirArquivo(result, escolha_arquivo, escolha);
         }
-      break;
-
-      case 2:
-        MENU_Instancias();
-        cout << "\n - Escolha o arquivo que deseja ordenar: ";
-        cin >> escolha_insertionsort;
-
-        if (escolha_insertionsort >= 1 && escolha_insertionsort <= 14)
-        {
-          AbrirArquivo_Insertionsort(result, escolha_insertionsort);
-        }
-      break;
-
-      case 3:
-        MENU_Instancias();
-        cout << "\n - Escolha o arquivo que deseja ordenar: ";
-        cin >> escolha_selectionsort;
-
-        if (escolha_selectionsort >= 1 && escolha_selectionsort <= 14)
-        {
-          AbrirArquivo_Selectionsort(result, escolha_selectionsort);
-        }
-      break;
     }
+
   }while (escolha != 0);
  
  

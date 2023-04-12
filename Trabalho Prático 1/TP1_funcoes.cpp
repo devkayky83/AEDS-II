@@ -48,14 +48,32 @@ void MENU_Instancias()
     cout << "\t ---------------------------------------------------\n";
 }
 
-void AbrirArquivo_Bubblesort(vector <string> &vector, int escolha_bubblesort)
+void Escolha_Metodo(int escolha, vector <string> &vector, int tamanho)
+{
+    switch (escolha)
+    {
+        case 1:
+            Bubble_Sort(vector, tamanho);
+        break;
+
+        case 2:
+            InsertionSort(vector, tamanho);
+        break;
+
+        case 3:
+            SelectionSort(vector, tamanho);
+        break;
+    }
+}
+
+void AbrirArquivo(vector <string> &vector, int escolha_metodo, int escolha)
 {
     int tamanho, i = 0;
     string linha;
 
     ifstream arquivoE;
 
-    switch (escolha_bubblesort)
+    switch (escolha_metodo)
     {
         case 1:
             arquivoE.open("DicionarioAleatorio-29855.txt");
@@ -143,7 +161,7 @@ void AbrirArquivo_Bubblesort(vector <string> &vector, int escolha_bubblesort)
 
     system("cls");
     clock_t inicio = clock();
-    Bubble_Sort(vector, tamanho);
+    Escolha_Metodo(escolha, vector, tamanho);
     inicio = clock() - inicio;
 
     system("cls");
@@ -157,235 +175,7 @@ void AbrirArquivo_Bubblesort(vector <string> &vector, int escolha_bubblesort)
 
     cout << "\n Número total de troca de posições: " << trocas << endl;
 
-    cout << "\n Tempo gasto: " << ((float)inicio) / CLOCKS_PER_SEC << " segundos" << endl; 
-
-    system("pause");
-}
-
-void AbrirArquivo_Insertionsort(vector <string> &vector, int escolha_insertionsort)
-{
-    int tamanho, i = 0;
-    string linha;
-
-    ifstream arquivoE;
-
-    switch (escolha_insertionsort)
-    {
-        case 1:
-            arquivoE.open("DicionarioAleatorio-29855.txt");
-            tamanho = 29855;
-        break;
-
-        case 2:
-            arquivoE.open("ListaAleatoria-1000.txt");
-            tamanho = 1000;
-        break;
-
-        case 3:
-            arquivoE.open("DicionarioInversamenteOrdenado-29855.txt");
-            tamanho = 29855;
-        break;
-
-        case 4:
-            arquivoE.open("DicionarioInversamenteOrdenado-261791.txt");
-            tamanho = 261791;
-        break;
-
-        case 5:
-            arquivoE.open("DicionarioOrdenado-29855.txt");
-            tamanho = 29855;
-        break;
-
-        case 6:
-            arquivoE.open("DicionarioOrdenado-261791.txt");
-            tamanho = 261791;
-        break;
-
-        case 7:
-            arquivoE.open("ListaOrdenada-1000.txt");
-            tamanho = 1000;
-        break;
-
-        case 8:
-            arquivoE.open("ListaInversamenteOrdenada-1000.txt");
-            tamanho = 1000;
-        break;
-
-        case 9:
-            arquivoE.open("ListaQuaseOrdenada-1000.txt");
-            tamanho = 1000;
-        break;
-
-        case 10:
-            arquivoE.open("ListaAleatoria-10000.txt");
-            tamanho = 10000;
-        break;
-
-        case 11:
-            arquivoE.open("ListaInversamenteOrdenada-10000.txt");
-            tamanho = 10000;
-        break;
-
-        case 12:
-            arquivoE.open("ListaOrdenada-10000.txt");
-            tamanho = 10000;
-        break;
-
-        case 13:
-            arquivoE.open("ListaQuaseOrdenada-10000.txt");
-            tamanho = 10000;
-        break;
-
-        case 14:
-            arquivoE.open("ListaAleatoria-100000.txt");
-            tamanho = 100000;
-        break;
-    }
-
-    if (arquivoE.is_open())
-    {
-        while (getline(arquivoE, linha))
-        {
-            vector.push_back(linha);
-            i++;
-        }
-    }
-    else
-    {
-        cout << "\n Erro!" << endl;
-    }
-
-    system("cls");
-
-    clock_t inicio = clock();
-    InsertionSort(vector, tamanho);
-    inicio = clock() - inicio;
-
-    cout << "\n Vetor pós ordenação: \n" << endl;
-    cout << "[";
-    for (int i = 0; i < tamanho; i++)
-    {
-        cout << " " << vector[i];
-    }
-    cout << " ]" << endl;
-
-    cout << "\n Número total de troca de posições: " << trocas << endl;
-
-    cout << "\n Tempo total gasto: " << ((float)inicio) / CLOCKS_PER_SEC << " segundos" << endl;
-
-    system("pause");
-}
-
-void AbrirArquivo_Selectionsort(vector <string> &vector, int escolha_selectionsort)
-{
-    int tamanho, i = 0;
-    string linha;
-
-    ifstream arquivoE;
-
-    switch (escolha_selectionsort)
-    {
-        case 1:
-            arquivoE.open("DicionarioAleatorio-29855.txt");
-            tamanho = 29855;
-        break;
-
-        case 2:
-            arquivoE.open("ListaAleatoria-1000.txt");
-            tamanho = 1000;
-        break;
-
-        case 3:
-            arquivoE.open("DicionarioInversamenteOrdenado-29855.txt");
-            tamanho = 29855;
-        break;
-
-        case 4:
-            arquivoE.open("DicionarioInversamenteOrdenado-261791.txt");
-            tamanho = 261791;
-        break;
-
-        case 5:
-            arquivoE.open("DicionarioOrdenado-29855.txt");
-            tamanho = 29855;
-        break;
-
-        case 6:
-            arquivoE.open("DicionarioOrdenado-261791.txt");
-            tamanho = 261791;
-        break;
-
-        case 7:
-            arquivoE.open("ListaOrdenada-1000.txt");
-            tamanho = 1000;
-        break;
-
-        case 8:
-            arquivoE.open("ListaInversamenteOrdenada-1000.txt");
-            tamanho = 1000;
-        break;
-
-        case 9:
-            arquivoE.open("ListaQuaseOrdenada-1000.txt");
-            tamanho = 1000;
-        break;
-
-        case 10:
-            arquivoE.open("ListaAleatoria-10000.txt");
-            tamanho = 10000;
-        break;
-
-        case 11:
-            arquivoE.open("ListaInversamenteOrdenada-10000.txt");
-            tamanho = 10000;
-        break;
-
-        case 12:
-            arquivoE.open("ListaOrdenada-10000.txt");
-            tamanho = 10000;
-        break;
-
-        case 13:
-            arquivoE.open("ListaQuaseOrdenada-10000.txt");
-            tamanho = 10000;
-        break;
-
-        case 14:
-            arquivoE.open("ListaAleatoria-100000.txt");
-            tamanho = 100000;
-        break;
-    }
-
-    if (arquivoE.is_open())
-    {
-        while (getline(arquivoE, linha))
-        {
-            vector.push_back(linha);
-            i++;
-        }
-    }
-    else
-    {
-        cout << "\n Erro!" << endl;
-    }
-
-    system("cls");
-
-    clock_t inicio = clock();
-    SelectionSort(vector, tamanho);
-    inicio = clock() - inicio;
-
-    cout << "\n Vetor pós ordenação: \n" << endl;
-    cout << "[";
-    for (int k = 0; k < tamanho; k++)
-    {
-        cout << " " << vector[k];
-    }
-    cout << " ]" << endl;
-
-    cout << "\n Número total de troca de posições: " << trocas << endl;
-
-    cout << "\n Tempo total gasto: " << ((float)inicio) / CLOCKS_PER_SEC << " segundos/milissegundos" << endl;
+    cout << "\n Tempo gasto: " << ((float)inicio) / CLOCKS_PER_SEC << " segundos/milissegundos" << endl; 
 
     system("pause");
 }
