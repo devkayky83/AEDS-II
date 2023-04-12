@@ -3,11 +3,11 @@
 
 using namespace std;
 
-void Bubble_Sort(string Lista[], int tamanho) // Ordem crescente
+int trocas = 0;
+
+void Bubble_Sort(vector <string> &Lista, int tamanho, int troca = 0) // Ordem crescente
 {
     string aux;
-    int troca = 0;
-
     for (int i = 0; i < tamanho - 1; i++)
     {
         for (int j = 1; j < tamanho - i; j++)
@@ -21,19 +21,10 @@ void Bubble_Sort(string Lista[], int tamanho) // Ordem crescente
             }
         }
     }
-    
-    system("cls");
-    cout << "\n Vetor pós ordenação: " << endl;
-    cout << "[";
-    for (int i = 0; i < tamanho; i++)
-    {
-        cout << " " << Lista[i];
-    }
-    cout << " ]" << endl;
-    cout << "\n Número total de troca de posições: " << troca << endl;
+    trocas = troca;
 }
 
-void InsertionSort(string Lista[], int n)
+void InsertionSort(vector <string> &Lista, int n, int troca = 0)
 {
     string chave;
     int j;
@@ -41,26 +32,20 @@ void InsertionSort(string Lista[], int n)
     for (int i = 1; i < n; i++)
     {
         chave = Lista[i];
-        j = i-1;
+        j = i - 1;
 
         while (j >= 0 && Lista[j] > chave)
         {
-            Lista[j+1] = Lista[j];
+            Lista[j + 1] = Lista[j];
             j--;
+            troca++;
         }
-        Lista[j+1] = chave;
+        Lista[j + 1] = chave;
     }
-
-    cout << "\n Vetor pós ordenação: "  << endl;
-    cout << "[";
-    for (int i = 0; i < n; i++)
-    {
-        cout << " " << Lista[i];
-    }
-    cout << " ]" << endl;
+    trocas = troca;
 }
 
-void SelectionSort(string Lista[], int n)
+void SelectionSort(vector <string> &Lista, int n, int troca = 0)
 {
     int min;
     string aux;
@@ -74,28 +59,22 @@ void SelectionSort(string Lista[], int n)
             if (Lista[j] < Lista[min])
             {
                 min = j;
+                troca++;
             }
         }
         aux = Lista[i];
         Lista[i] = Lista[min];
         Lista[min] = aux;
     }
-
-    cout << "\n Vetor pós ordenação: " << endl;
-    cout << "[";
-    for (int k = 0; k < n; k++)
-    {
-        cout << " "<< Lista[k];
-    }
-    cout << " ]" << endl;
+    trocas = troca;
 }
 
-int QuickSort(int v[], int esquerda, int direita, int troca = 0)
+int QuickSort(vector <string> &v, int esquerda, int direita, int troca = 0)
 {
-    int aux, i = esquerda, j = direita;
-    int pivo = v[(esquerda + direita) / 2] ;
+    string aux; 
+    int i = esquerda, j = direita;
+    string pivo = v[(esquerda + direita) / 2];
 
-    
     while (i <= j)
     {
         for (int i = 0; i < 9; i++)
@@ -117,7 +96,6 @@ int QuickSort(int v[], int esquerda, int direita, int troca = 0)
             j--;
             troca++;
         }
-        
     };
 
     for (int i = 0; i < 9; i++)
@@ -138,13 +116,15 @@ int QuickSort(int v[], int esquerda, int direita, int troca = 0)
     cout << endl;
 }
 
-void shellsort(int v[], int n)
+void shellsort(vector <string> &v, int n)
 {
-    int h, x, i, j, troca = 0;
+    int h, i, j, troca = 0;
+    string x;
 
     for (h = 1; h < n; h = 3 * h + 1);
 
-    cout << "\n Sequência de troca: " << "[";
+    cout << "\n Sequência de troca: "
+         << "[";
     while (h > 1)
     {
         h = h / 3;
@@ -155,7 +135,7 @@ void shellsort(int v[], int n)
             j = i;
 
             cout << " " << v[i];
-            while(j >= h && v[j - h] > x)
+            while (j >= h && v[j - h] > x)
             {
                 v[j] = v[j - h];
                 j = j - h;
@@ -165,8 +145,9 @@ void shellsort(int v[], int n)
         }
     }
     cout << " ]" << endl;
-    
-    cout << "\n Vetor pós ordenação: " << "[";
+
+    cout << "\n Vetor pós ordenação: "
+         << "[";
     for (int i = 0; i < 1000; i++)
     {
         cout << " " << v[i];
@@ -177,7 +158,7 @@ void shellsort(int v[], int n)
 
 void Intercala(int Lista[], int inicio, int meio, int fim)
 {
-    int * ListaAux = (int *) malloc(sizeof(int) * (fim + 1));
+    int *ListaAux = (int *)malloc(sizeof(int) * (fim + 1));
     int i, j, troca;
 
     for (i = inicio; i <= meio; i++)
@@ -221,10 +202,3 @@ void MergeSort(int Lista[], int inicio, int fim)
         Intercala(Lista, inicio, meio, fim);
     }
 }
-
-
-
-
-
-
-
