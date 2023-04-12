@@ -5,7 +5,7 @@ using namespace std;
 
 int trocas = 0;
 
-void Bubble_Sort(vector <string> &Lista, int tamanho, int troca = 0) // Ordem crescente
+void Bubble_Sort(vector <string> &Lista, int tamanho, int troca) // Ordem crescente
 {
     string aux;
     for (int i = 0; i < tamanho - 1; i++)

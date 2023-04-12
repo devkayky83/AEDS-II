@@ -14,16 +14,16 @@ int main()
   UINT CPAGE_DEFAULT = GetConsoleOutputCP();
   SetConsoleOutputCP(CPAGE_UTF8);
  
-  int escolha, escolha_arquivo;
+  int escolha_metodo, escolha_arquivo;
   vector <string> result;
 
   MENU();
   cout << "\n\t - Selecione o método que deseja aplicar: ";
-  cin >> escolha; 
+  cin >> escolha_metodo; 
 
   do
   {
-    if (escolha >= 1 && escolha <= 6)
+    if (escolha_metodo >= 1 && escolha_metodo <= 6)
     {
         MENU_Instancias();
         cout << "\n - Escolha o arquivo que deseja ordenar: ";
@@ -31,11 +31,11 @@ int main()
       
         if (escolha_arquivo >= 1 && escolha_arquivo <= 14)
         {
-           AbrirArquivo(result, escolha_arquivo, escolha);
+           AbrirArquivo(result, escolha_arquivo, escolha_metodo);
         }
     }
 
-  }while (escolha != 0);
+  }while (escolha_metodo != 0);
  
  
   cout << endl;

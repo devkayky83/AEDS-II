@@ -32,14 +32,14 @@ void MENU_Instancias()
     cout << "\t                    - ARQUIVOS - \n";
     cout << "\t ---------------------------------------------------\n";
     cout << "\n\t    1 - DicionarioAleatorio-29855.txt";
-    cout << "\n\t    2 - ListaAleatoria-1000.txt";
-    cout << "\n\t    3 - DicionarioInversamenteOrdenado-29855.txt";
-    cout << "\n\t    4 - DicionarioInversamenteOrdenado-261791.txt";
-    cout << "\n\t    5 - DicionarioOrdenado-29855.txt";
-    cout << "\n\t    6 - DicionarioOrdenado-261791.txt";
-    cout << "\n\t    7 - ListaOrdenada-1000.txt";
-    cout << "\n\t    8 - ListaInversamenteOrdenada-1000.txt";
-    cout << "\n\t    9 - ListaQuaseOrdenada-1000.txt";
+    cout << "\n\t    2 - DicionarioInversamenteOrdenado-29855.txt";
+    cout << "\n\t    3 - DicionarioInversamenteOrdenado-261791.txt";
+    cout << "\n\t    4 - DicionarioOrdenado-29855.txt";
+    cout << "\n\t    5 - DicionarioOrdenado-261791.txt";
+    cout << "\n\t    6 - ListaOrdenada-1000.txt";
+    cout << "\n\t    7 - ListaInversamenteOrdenada-1000.txt";
+    cout << "\n\t    8 - ListaQuaseOrdenada-1000.txt";
+    cout << "\n\t    9 - ListaAleatoria-1000.txt";
     cout << "\n\t   10 - ListaAleatoria-10000.txt";
     cout << "\n\t   11 - ListaInversamenteOrdenada-10000.txt";
     cout << "\n\t   12 - ListaOrdenada-10000.txt";
@@ -48,32 +48,32 @@ void MENU_Instancias()
     cout << "\t ---------------------------------------------------\n";
 }
 
-void Escolha_Metodo(int escolha, vector <string> &vector, int tamanho)
+void Escolha_Metodo(int escolha_metodo, vector <string> &vector, int tamanho)
 {
-    switch (escolha)
+    switch (escolha_metodo)
     {
         case 1:
-            Bubble_Sort(vector, tamanho);
+            Bubble_Sort(vector, tamanho, trocas);
         break;
 
         case 2:
-            InsertionSort(vector, tamanho);
+            InsertionSort(vector, tamanho, trocas);
         break;
 
         case 3:
-            SelectionSort(vector, tamanho);
+            SelectionSort(vector, tamanho, trocas);
         break;
     }
 }
 
-void AbrirArquivo(vector <string> &vector, int escolha_metodo, int escolha)
+void AbrirArquivo(vector <string> &vector, int escolha_arquivo, int escolha_metodo)
 {
     int tamanho, i = 0;
     string linha;
 
     ifstream arquivoE;
 
-    switch (escolha_metodo)
+    switch (escolha_arquivo)
     {
         case 1:
             arquivoE.open("DicionarioAleatorio-29855.txt");
@@ -81,42 +81,42 @@ void AbrirArquivo(vector <string> &vector, int escolha_metodo, int escolha)
         break;
 
         case 2:
-            arquivoE.open("ListaAleatoria-1000.txt");
-            tamanho = 1000;
-        break;
-
-        case 3:
             arquivoE.open("DicionarioInversamenteOrdenado-29855.txt");
             tamanho = 29855;
         break;
 
-        case 4:
+        case 3:
             arquivoE.open("DicionarioInversamenteOrdenado-261791.txt");
             tamanho = 261791;
         break;
 
-        case 5:
+        case 4:
             arquivoE.open("DicionarioOrdenado-29855.txt");
             tamanho = 29855;
         break;
 
-        case 6:
+        case 5:
             arquivoE.open("DicionarioOrdenado-261791.txt");
             tamanho = 261791;
         break;
 
-        case 7:
+        case 6:
             arquivoE.open("ListaOrdenada-1000.txt");
             tamanho = 1000;
         break;
 
-        case 8:
+        case 7:
             arquivoE.open("ListaInversamenteOrdenada-1000.txt");
             tamanho = 1000;
         break;
 
-        case 9:
+        case 8:
             arquivoE.open("ListaQuaseOrdenada-1000.txt");
+            tamanho = 1000;
+        break;
+
+        case 9:
+            arquivoE.open("ListaAleatoria-1000.txt");
             tamanho = 1000;
         break;
 
@@ -161,7 +161,7 @@ void AbrirArquivo(vector <string> &vector, int escolha_metodo, int escolha)
 
     system("cls");
     clock_t inicio = clock();
-    Escolha_Metodo(escolha, vector, tamanho);
+    Escolha_Metodo(escolha_metodo, vector, tamanho);
     inicio = clock() - inicio;
 
     system("cls");
