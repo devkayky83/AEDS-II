@@ -14,7 +14,7 @@ int main()
   UINT CPAGE_DEFAULT = GetConsoleOutputCP();
   SetConsoleOutputCP(CPAGE_UTF8);
  
-  int escolha_metodo, escolha_arquivo;
+  int escolha_metodo = 0, escolha_arquivo = 0;
   vector <string> result;
 
   MENU();
@@ -34,7 +34,6 @@ int main()
            AbrirArquivo(result, escolha_arquivo, escolha_metodo);
         }
     }
-
   }while (escolha_metodo != 0);
  
  

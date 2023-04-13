@@ -63,6 +63,10 @@ void Escolha_Metodo(int escolha_metodo, vector <string> &vector, int tamanho)
         case 3:
             SelectionSort(vector, tamanho, trocas);
         break;
+        
+        case 4:
+            Shellsort(vector, tamanho, trocas);
+        break;
     }
 }
 

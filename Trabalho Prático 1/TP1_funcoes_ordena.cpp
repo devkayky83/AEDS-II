@@ -53,23 +53,22 @@ void SelectionSort(vector <string> &Lista, int n, int troca = 0)
     for (int i = 0; i < n - 1; i++)
     {
         min = i;
-
         for (int j = i + 1; j < n; j++)
         {
             if (Lista[j] < Lista[min])
             {
                 min = j;
-                troca++;
             }
         }
         aux = Lista[i];
         Lista[i] = Lista[min];
         Lista[min] = aux;
+        troca++;
     }
     trocas = troca;
 }
 
-int QuickSort(vector <string> &v, int esquerda, int direita, int troca = 0)
+void QuickSort(vector <string> &v, int esquerda, int direita, int troca = 0)
 {
     string aux; 
     int i = esquerda, j = direita;
@@ -116,15 +115,13 @@ int QuickSort(vector <string> &v, int esquerda, int direita, int troca = 0)
     cout << endl;
 }
 
-void shellsort(vector <string> &v, int n)
+void Shellsort(vector <string> &v, int n, int troca = 0)
 {
-    int h, i, j, troca = 0;
+    int h, i, j;
     string x;
 
     for (h = 1; h < n; h = 3 * h + 1);
 
-    cout << "\n Sequência de troca: "
-         << "[";
     while (h > 1)
     {
         h = h / 3;
@@ -144,16 +141,7 @@ void shellsort(vector <string> &v, int n)
             v[j] = x;
         }
     }
-    cout << " ]" << endl;
-
-    cout << "\n Vetor pós ordenação: "
-         << "[";
-    for (int i = 0; i < 1000; i++)
-    {
-        cout << " " << v[i];
-    }
-    cout << " ]" << endl;
-    cout << "\n Total de trocas: " << troca;
+    trocas = troca;
 }
 
 void Intercala(int Lista[], int inicio, int meio, int fim)
