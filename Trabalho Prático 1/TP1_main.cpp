@@ -29,7 +29,7 @@ int main()
         cout << "\n - Escolha o arquivo que deseja ordenar: ";
         cin >> escolha_arquivo;
       
-        if (escolha_arquivo >= 1 && escolha_arquivo <= 14)
+        if (escolha_arquivo >= 1 && escolha_arquivo <= 17)
         {
            AbrirArquivo(result, escolha_arquivo, escolha_metodo);
         }

@@ -44,7 +44,10 @@ void MENU_Instancias()
     cout << "\n\t   11 - ListaInversamenteOrdenada-10000.txt";
     cout << "\n\t   12 - ListaOrdenada-10000.txt";
     cout << "\n\t   13 - ListaQuaseOrdenada-10000.txt";
-    cout << "\n\t   14 - ListaAleatoria-100000.txt" << endl;
+    cout << "\n\t   14 - ListaAleatoria-100000.txt";
+    cout << "\n\t   15 - ListaInversamenteOrdenada-100000.txt";
+    cout << "\n\t   16 - ListaOrdenada-100000.txt";
+    cout << "\n\t   17 - ListaQuaseOrdenada-100000.txt" << endl;
     cout << "\t ---------------------------------------------------\n";
 }
 
@@ -67,12 +70,16 @@ void Escolha_Metodo(int escolha_metodo, vector <string> &vector, int tamanho)
         case 4:
             Shellsort(vector, tamanho, trocas);
         break;
+
+        case 5:
+            QuickSort(vector, 0, tamanho - 1, trocas);
+        break;
     }
 }
 
-void AbrirArquivo(vector <string> &vector, int escolha_arquivo, int escolha_metodo)
+void AbrirArquivo(vector <string> vector, int escolha_arquivo = 0, int escolha_metodo = 0)
 {
-    int tamanho, i = 0;
+    int tamanho = 0, i = 0;
     string linha;
 
     ifstream arquivoE;
@@ -148,6 +155,21 @@ void AbrirArquivo(vector <string> &vector, int escolha_arquivo, int escolha_meto
             arquivoE.open("ListaAleatoria-100000.txt");
             tamanho = 100000;
         break;
+
+        case 15:
+            arquivoE.open("ListaInversamenteOrdenada-100000.txt");
+            tamanho = 100000;
+        break;
+
+        case 16:
+            arquivoE.open("ListaOrdenada-100000.txt");
+            tamanho = 100000;
+        break;
+
+        case 17:
+            arquivoE.open("ListaQuaseOrdenada-100000.txt");
+            tamanho = 100000;
+        break;
     }
 
     if (arquivoE.is_open())
@@ -171,15 +193,15 @@ void AbrirArquivo(vector <string> &vector, int escolha_arquivo, int escolha_meto
     system("cls");
     cout << "\n Vetor pós ordenação: \n" << endl;
     cout << "[";
-    for (int i = 0; i < tamanho; i++)
+    for (i = 0; i < tamanho; i++)
     {
         cout << " " << vector[i];
     }
     cout << " ]" << endl;
 
-    cout << "\n Número total de troca de posições: " << trocas << endl;
+    cout << "\n - Número total de troca de posições: " << trocas << endl;
 
-    cout << "\n Tempo gasto: " << ((float)inicio) / CLOCKS_PER_SEC << " segundos/milissegundos" << endl; 
+    cout << "\n - Tempo gasto: " << ((float)inicio) / CLOCKS_PER_SEC << " segundos/milissegundos" << endl; 
 
     system("pause");
 }
