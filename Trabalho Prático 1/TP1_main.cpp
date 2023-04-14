@@ -15,7 +15,8 @@ int main()
   SetConsoleOutputCP(CPAGE_UTF8);
  
   int escolha_metodo = 0, escolha_arquivo = 0;
-  vector <string> result;
+  vector <string> palavra;
+  vector <int> numero;
 
   MENU();
   cout << "\n\t - Selecione o método que deseja aplicar: ";
@@ -31,7 +32,7 @@ int main()
       
         if (escolha_arquivo >= 1 && escolha_arquivo <= 17)
         {
-           AbrirArquivo(result, escolha_arquivo, escolha_metodo);
+           AbrirArquivo(palavra, numero, escolha_arquivo, escolha_metodo);
         }
     }
   }while (escolha_metodo != 0);

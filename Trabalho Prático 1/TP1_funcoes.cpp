@@ -7,6 +7,8 @@
 #include <vector>
 #include "TP1_funcoes_ordena.cpp"
 #include "TP1.hpp"
+
+int recebe_escolha_arquivo = 0;
  
 using namespace std;
  
@@ -51,35 +53,35 @@ void MENU_Instancias()
     cout << "\t ---------------------------------------------------\n";
 }
 
-void Escolha_Metodo(int escolha_metodo, vector <string> &vector, int tamanho)
+void Escolha_Metodo(int escolha_metodo, vector <string> &vector_string, vector <int> &vector_int)
 {
     switch (escolha_metodo)
     {
         case 1:
-            Bubble_Sort(vector, tamanho, trocas);
+            Bubble_Sort(vector_string, vector_int, trocas, recebe_escolha_arquivo);
         break;
 
         case 2:
-            InsertionSort(vector, tamanho, trocas);
+            InsertionSort(vector_string, vector_int, trocas, recebe_escolha_arquivo);
         break;
 
         case 3:
-            SelectionSort(vector, tamanho, trocas);
+            SelectionSort(vector_string, vector_int, trocas, recebe_escolha_arquivo);
         break;
         
         case 4:
-            Shellsort(vector, tamanho, trocas);
+            Shellsort(vector_string, vector_int, trocas, recebe_escolha_arquivo);
         break;
 
         case 5:
-            QuickSort(vector, 0, tamanho - 1, trocas);
+            QuickSort(vector_string, vector_int, 0, trocas, recebe_escolha_arquivo);
         break;
     }
 }
 
-void AbrirArquivo(vector <string> vector, int escolha_arquivo = 0, int escolha_metodo = 0)
+void AbrirArquivo(vector <string> vector_string, vector <int> vector_int, int escolha_arquivo = 0, int escolha_metodo = 0)
 {
-    int tamanho = 0, i = 0;
+    int i = 0;
     string linha;
 
     ifstream arquivoE;
@@ -88,97 +90,93 @@ void AbrirArquivo(vector <string> vector, int escolha_arquivo = 0, int escolha_m
     {
         case 1:
             arquivoE.open("DicionarioAleatorio-29855.txt");
-            tamanho = 29855;
         break;
 
         case 2:
             arquivoE.open("DicionarioInversamenteOrdenado-29855.txt");
-            tamanho = 29855;
         break;
 
         case 3:
             arquivoE.open("DicionarioInversamenteOrdenado-261791.txt");
-            tamanho = 261791;
         break;
 
         case 4:
             arquivoE.open("DicionarioOrdenado-29855.txt");
-            tamanho = 29855;
         break;
 
         case 5:
             arquivoE.open("DicionarioOrdenado-261791.txt");
-            tamanho = 261791;
         break;
 
         case 6:
             arquivoE.open("ListaOrdenada-1000.txt");
-            tamanho = 1000;
         break;
 
         case 7:
             arquivoE.open("ListaInversamenteOrdenada-1000.txt");
-            tamanho = 1000;
         break;
 
         case 8:
             arquivoE.open("ListaQuaseOrdenada-1000.txt");
-            tamanho = 1000;
         break;
 
         case 9:
             arquivoE.open("ListaAleatoria-1000.txt");
-            tamanho = 1000;
         break;
 
         case 10:
             arquivoE.open("ListaAleatoria-10000.txt");
-            tamanho = 10000;
         break;
 
         case 11:
             arquivoE.open("ListaInversamenteOrdenada-10000.txt");
-            tamanho = 10000;
         break;
 
         case 12:
             arquivoE.open("ListaOrdenada-10000.txt");
-            tamanho = 10000;
         break;
 
         case 13:
             arquivoE.open("ListaQuaseOrdenada-10000.txt");
-            tamanho = 10000;
         break;
 
         case 14:
             arquivoE.open("ListaAleatoria-100000.txt");
-            tamanho = 100000;
         break;
 
         case 15:
             arquivoE.open("ListaInversamenteOrdenada-100000.txt");
-            tamanho = 100000;
         break;
 
         case 16:
             arquivoE.open("ListaOrdenada-100000.txt");
-            tamanho = 100000;
         break;
 
         case 17:
             arquivoE.open("ListaQuaseOrdenada-100000.txt");
-            tamanho = 100000;
         break;
     }
 
     if (arquivoE.is_open())
     {
-        while (getline(arquivoE, linha))
+        if (escolha_arquivo >= 1 && escolha_arquivo <= 5)
         {
-            vector.push_back(linha);
-            i++;
-        }        
+            while (getline(arquivoE, linha))
+            {
+                vector_string.push_back(linha);
+                i++;
+            }
+        }
+
+        else if (escolha_arquivo >= 6 && escolha_arquivo <= 17)
+        {
+            while (getline(arquivoE, linha))
+            {
+                vector_int.push_back(stoi(linha));
+                i++;
+            }
+        }
+        recebe_escolha_arquivo = escolha_arquivo;      
     }
     else
     {
@@ -187,15 +185,26 @@ void AbrirArquivo(vector <string> vector, int escolha_arquivo = 0, int escolha_m
 
     system("cls");
     clock_t inicio = clock();
-    Escolha_Metodo(escolha_metodo, vector, tamanho);
+    Escolha_Metodo(escolha_metodo, vector_string, vector_int);
     inicio = clock() - inicio;
 
     system("cls");
     cout << "\n Vetor pós ordenação: \n" << endl;
     cout << "[";
-    for (i = 0; i < tamanho; i++)
+
+    if (escolha_arquivo >= 1 && escolha_arquivo <= 5)
     {
-        cout << " " << vector[i];
+        for (i = 0; i < vector_string.size(); i++)
+        {
+            cout << " " << vector_string[i];
+        }
+    }
+    else if (escolha_arquivo >= 6 && escolha_arquivo <= 17)
+    {
+        for (i = 0; i < vector_int.size(); i++)
+        {
+            cout << " " << vector_int[i];
+        }
     }
     cout << " ]" << endl;
 
