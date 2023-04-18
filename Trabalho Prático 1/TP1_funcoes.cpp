@@ -68,23 +68,25 @@ void MENU_Instancias()
 
 void Escolha_Metodo(int escolha_metodo, vector <string> &vector_string, vector <int> &vector_int)
 {
+    trocas = 0;
+    comparacoes = 0;
 
     switch (escolha_metodo)
     {
         case 1:
-            Bubble_Sort(vector_string, vector_int, trocas = 0, comparacoes = 0, recebe_escolha_arquivo);
+            Bubble_Sort(vector_string, vector_int, recebe_escolha_arquivo);
         break;
 
         case 2:
-            InsertionSort(vector_string, vector_int, trocas = 0, comparacoes = 0, recebe_escolha_arquivo);
+            InsertionSort(vector_string, vector_int, recebe_escolha_arquivo);
         break;
 
         case 3:
-            SelectionSort(vector_string, vector_int, trocas = 0, comparacoes = 0, recebe_escolha_arquivo);
+            SelectionSort(vector_string, vector_int, recebe_escolha_arquivo);
         break;
         
         case 4:
-            ShellSort(vector_string, vector_int, trocas = 0, comparacoes = 0, recebe_escolha_arquivo);
+            ShellSort(vector_string, vector_int, recebe_escolha_arquivo);
         break;
 
         case 5:

@@ -3,75 +3,75 @@
 
  Arquivo: DicionarioAleatorio-29855.txt
 
- Trocas: 6986
+ Trocas: 110818
 
- Comparações: 22869
+ Comparações: 172469
 
- Tempo Total: 0.036 segundos/milissegundos
+ Tempo Total: 0.053 segundos/milissegundos
 
  -----------------------------------------------
  Método utilizado: Quick Sort
 
  Arquivo: DicionarioAleatorio-261791.txt
 
- Trocas: 33430
+ Trocas: 1280482
 
- Comparações: 228361
+ Comparações: 1883123
 
- Tempo Total: 0.376 segundos/milissegundos
+ Tempo Total: 0.527 segundos/milissegundos
 
  -----------------------------------------------
  Método utilizado: Quick Sort
 
  Arquivo: DicionarioInversamenteOrdenado-29855.txt
 
- Trocas: 14928
+ Trocas: 1315057
 
- Comparações: 14928
+ Comparações: 1955836
 
- Tempo Total: 0.017 segundos/milissegundos
+ Tempo Total: 0.03 segundos/milissegundos
 
  -----------------------------------------------
  Método utilizado: Quick Sort
 
  Arquivo: DicionarioInversamenteOrdenado-261791.txt
 
- Trocas: 130485
+ Trocas: 2128813
 
- Comparações: 131307
+ Comparações: 3263816
 
- Tempo Total: 0.287 segundos/milissegundos
+ Tempo Total: 0.41 segundos/milissegundos
 
  -----------------------------------------------
  Método utilizado: Quick Sort
 
  Arquivo: DicionarioOrdenado-29855.txt
 
- Trocas: 1
+ Trocas: 2145196
 
- Comparações: 29855
+ Comparações: 3312965
 
- Tempo Total: 0.013 segundos/milissegundos
+ Tempo Total: 0.02 segundos/milissegundos
 
  -----------------------------------------------
  Método utilizado: Quick Sort
 
  Arquivo: DicionarioOrdenado-261791.txt
 
- Trocas: 1
+ Trocas: 2278110
 
- Comparações: 261791
+ Comparações: 3709220
 
- Tempo Total: 0.137 segundos/milissegundos
+ Tempo Total: 0.187 segundos/milissegundos
 
  -----------------------------------------------
  Método utilizado: Quick Sort
 
  Arquivo: ListaAleatoria-1000.txt
 
- Trocas: 251
+ Trocas: 2280719
 
- Comparações: 750
+ Comparações: 3713894
 
  Tempo Total: 0 segundos/milissegundos
 
@@ -80,42 +80,42 @@
 
  Arquivo: ListaAleatoria-10000.txt
 
- Trocas: 1887
+ Trocas: 2313876
 
- Comparações: 8114
+ Comparações: 3767559
 
- Tempo Total: 0.001 segundos/milissegundos
+ Tempo Total: 0.005 segundos/milissegundos
 
  -----------------------------------------------
  Método utilizado: Quick Sort
 
  Arquivo: ListaAleatoria-100000.txt
 
- Trocas: 18064
+ Trocas: 2722168
 
- Comparações: 81937
+ Comparações: 4379861
 
- Tempo Total: 0.018 segundos/milissegundos
+ Tempo Total: 0.027 segundos/milissegundos
 
  -----------------------------------------------
  Método utilizado: Quick Sort
 
  Arquivo: ListaAleatoria-1000000.txt
 
- Trocas: 244074
+ Trocas: 7608270
 
- Comparações: 755926
+ Comparações: 11332156
 
- Tempo Total: 0.192 segundos/milissegundos
+ Tempo Total: 0.256 segundos/milissegundos
 
  -----------------------------------------------
  Método utilizado: Quick Sort
 
  Arquivo: ListaInversamenteOrdenada-1000.txt
 
- Trocas: 500
+ Trocas: 7609280
 
- Comparações: 500
+ Comparações: 11334188
 
  Tempo Total: 0 segundos/milissegundos
 
@@ -124,42 +124,42 @@
 
  Arquivo: ListaInversamenteOrdenada-10000.txt
 
- Trocas: 5000
+ Trocas: 7620184
 
- Comparações: 5000
+ Comparações: 11356902
 
- Tempo Total: 0.001 segundos/milissegundos
+ Tempo Total: 0 segundos/milissegundos
 
  -----------------------------------------------
  Método utilizado: Quick Sort
 
  Arquivo: ListaInversamenteOrdenada-100000.txt
 
- Trocas: 50000
+ Trocas: 7735718
 
- Comparações: 50000
+ Comparações: 11603506
 
- Tempo Total: 0.006 segundos/milissegundos
+ Tempo Total: 0.01 segundos/milissegundos
 
  -----------------------------------------------
  Método utilizado: Quick Sort
 
  Arquivo: ListaInversamenteOrdenada-1000000.txt
 
- Trocas: 500000
+ Trocas: 8760004
 
- Comparações: 500000
+ Comparações: 13676366
 
- Tempo Total: 0.059 segundos/milissegundos
+ Tempo Total: 0.092 segundos/milissegundos
 
  -----------------------------------------------
  Método utilizado: Quick Sort
 
  Arquivo: ListaOrdenada-1000.txt
 
- Trocas: 1
+ Trocas: 8760515
 
- Comparações: 1000
+ Comparações: 13677899
 
  Tempo Total: 0 segundos/milissegundos
 
@@ -168,9 +168,9 @@
 
  Arquivo: ListaOrdenada-10000.txt
 
- Trocas: 1
+ Trocas: 8766419
 
- Comparações: 10000
+ Comparações: 13695611
 
  Tempo Total: 0 segundos/milissegundos
 
@@ -179,65 +179,65 @@
 
  Arquivo: ListaOrdenada-100000.txt
 
- Trocas: 1
+ Trocas: 8831954
 
- Comparações: 100000
+ Comparações: 13892216
 
- Tempo Total: 0.004 segundos/milissegundos
+ Tempo Total: 0.01 segundos/milissegundos
 
  -----------------------------------------------
  Método utilizado: Quick Sort
 
  Arquivo: ListaOrdenada-1000000.txt
 
- Trocas: 1
+ Trocas: 9356241
 
- Comparações: 1000000
+ Comparações: 15465077
 
- Tempo Total: 0.055 segundos/milissegundos
+ Tempo Total: 0.1 segundos/milissegundos
 
  -----------------------------------------------
  Método utilizado: Quick Sort
 
  Arquivo: ListaQuaseOrdenada-1000.txt
 
- Trocas: 24
+ Trocas: 9356921
 
- Comparações: 977
+ Comparações: 15466848
 
- Tempo Total: 0.001 segundos/milissegundos
+ Tempo Total: 0 segundos/milissegundos
 
  -----------------------------------------------
  Método utilizado: Quick Sort
 
  Arquivo: ListaQuaseOrdenada-10000.txt
 
- Trocas: 238
+ Trocas: 9368221
 
- Comparações: 9763
+ Comparações: 15499659
 
- Tempo Total: 0.001 segundos/milissegundos
+ Tempo Total: 0.003 segundos/milissegundos
 
  -----------------------------------------------
  Método utilizado: Quick Sort
 
  Arquivo: ListaQuaseOrdenada-100000.txt
 
- Trocas: 2348
+ Trocas: 9460029
 
- Comparações: 97653
+ Comparações: 15717196
 
- Tempo Total: 0.006 segundos/milissegundos
+ Tempo Total: 0.01 segundos/milissegundos
 
  -----------------------------------------------
  Método utilizado: Quick Sort
 
  Arquivo: ListaQuaseOrdenada-1000000.txt
 
- Trocas: 2
+ Trocas: 10043516
 
- Comparações: 999999
+ Comparações: 17367675
 
- Tempo Total: 0.072 segundos/milissegundos
+ Tempo Total: 0.077 segundos/milissegundos
 
  -----------------------------------------------
