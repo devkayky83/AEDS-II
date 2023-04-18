@@ -68,7 +68,6 @@ void MENU_Instancias()
 
 void Escolha_Metodo(int escolha_metodo, vector <string> &vector_string, vector <int> &vector_int)
 {
-    vector <string> vector_aux;
 
     switch (escolha_metodo)
     {
@@ -102,7 +101,7 @@ void Escolha_Metodo(int escolha_metodo, vector <string> &vector_string, vector <
         case 6:
             if (verificacao == true)
             {
-                MergeSort_String(vector_string, vector_aux, 0, vector_string.size() - 1);
+                MergeSort_String(vector_string, 0, vector_string.size() - 1);
             }
             else if (verificacao == false)
             {
@@ -261,7 +260,7 @@ void AbrirArquivo(vector <string> vector_string, vector <int> vector_int, int es
 
     if (arquivoE.is_open())
     {
-        if (escolha_arquivo >= 1 && escolha_arquivo <= 5)
+        if (escolha_arquivo >= 1 && escolha_arquivo <= 6)
         {
             verificacao = true;
             while (getline(arquivoE, linha))
@@ -271,7 +270,7 @@ void AbrirArquivo(vector <string> vector_string, vector <int> vector_int, int es
             }
         }
 
-        else if (escolha_arquivo >= 6 && escolha_arquivo <= 22)
+        else if (escolha_arquivo >= 7 && escolha_arquivo <= 22)
         {
             verificacao = false;
             while (getline(arquivoE, linha))

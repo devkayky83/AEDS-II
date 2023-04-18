@@ -41,6 +41,8 @@ int main()
         }
     }
   }while (escolha_metodo != 0);
+
+  
  
  
   cout << endl;
