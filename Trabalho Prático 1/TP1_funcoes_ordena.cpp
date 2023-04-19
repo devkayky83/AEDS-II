@@ -8,7 +8,7 @@ unsigned long long comparacoes;
 
 void Bubble_Sort(vector <string> &Lista_String, vector <int> &Lista_Int, int recebe_escolha_arquivo = 0) // Ordem crescente
 {
-    if (recebe_escolha_arquivo >= 1 && recebe_escolha_arquivo <= 5)
+    if (recebe_escolha_arquivo >= 1 && recebe_escolha_arquivo <= 6)
     {
         string aux;
 
@@ -24,14 +24,10 @@ void Bubble_Sort(vector <string> &Lista_String, vector <int> &Lista_Int, int rec
                     Lista_String[j - 1] = aux;
                     trocas++; 
                 }
-                else 
-                {
-                    comparacoes++;
-                }
             }
         }
     }
-    else if(recebe_escolha_arquivo >= 6 && recebe_escolha_arquivo <= 22)
+    else if(recebe_escolha_arquivo >= 7 && recebe_escolha_arquivo <= 22)
     {
         int aux;
 
@@ -47,10 +43,6 @@ void Bubble_Sort(vector <string> &Lista_String, vector <int> &Lista_Int, int rec
                     Lista_Int[j - 1] = aux;
                     trocas++;
                 }
-                else 
-                {
-                    comparacoes++;
-                }
             }
         }
     }
@@ -58,7 +50,7 @@ void Bubble_Sort(vector <string> &Lista_String, vector <int> &Lista_Int, int rec
 
 void InsertionSort(vector <string> &Lista_String, vector <int> &Lista_Int, int recebe_escolha_arquivo = 0)
 {
-    if (recebe_escolha_arquivo >= 1 && recebe_escolha_arquivo <= 5)
+    if (recebe_escolha_arquivo >= 1 && recebe_escolha_arquivo <= 6)
     {
         string chave;
         int j;
@@ -79,7 +71,7 @@ void InsertionSort(vector <string> &Lista_String, vector <int> &Lista_Int, int r
             Lista_String[j + 1] = chave;
         }
     }
-    else if (recebe_escolha_arquivo >= 6 && recebe_escolha_arquivo <= 22)
+    else if (recebe_escolha_arquivo >= 7 && recebe_escolha_arquivo <= 22)
     {
         int chave, j;
 
@@ -103,7 +95,7 @@ void InsertionSort(vector <string> &Lista_String, vector <int> &Lista_Int, int r
 
 void SelectionSort(vector <string> &Lista_String, vector <int> &Lista_Int, int recebe_escolha_arquivo = 0)
 {
-    if (recebe_escolha_arquivo >= 1 && recebe_escolha_arquivo <= 5)
+    if (recebe_escolha_arquivo >= 1 && recebe_escolha_arquivo <= 6)
     {
         int min;
         string aux;
@@ -113,14 +105,10 @@ void SelectionSort(vector <string> &Lista_String, vector <int> &Lista_Int, int r
             min = i;
             for (int j = i + 1; j < Lista_String.size(); j++)
             {
+                comparacoes++;
                 if (Lista_String[j] < Lista_String[min])
                 {
-                    comparacoes++;
                     min = j;
-                }
-                else
-                {
-                    comparacoes++;
                 }
             }
             aux = Lista_String[i];
@@ -129,7 +117,7 @@ void SelectionSort(vector <string> &Lista_String, vector <int> &Lista_Int, int r
             trocas++;
         }
     }
-    else if (recebe_escolha_arquivo >= 6 && recebe_escolha_arquivo <= 22)
+    else if (recebe_escolha_arquivo >= 7 && recebe_escolha_arquivo <= 22)
     {
         int min, aux;
 
@@ -138,14 +126,10 @@ void SelectionSort(vector <string> &Lista_String, vector <int> &Lista_Int, int r
             min = i;
             for (int j = i + 1; j < Lista_Int.size(); j++)
             {
+                comparacoes++;
                 if (Lista_Int[j] < Lista_Int[min])
                 {
-                    comparacoes++;
                     min = j;
-                }
-                else
-                {
-                    comparacoes++;
                 }
             }
             aux = Lista_Int[i];
@@ -158,7 +142,7 @@ void SelectionSort(vector <string> &Lista_String, vector <int> &Lista_Int, int r
 
 void ShellSort(vector <string> &Lista_String, vector <int> &Lista_Int, int recebe_escolha_arquivo = 0)
 {
-    if (recebe_escolha_arquivo >= 1 && recebe_escolha_arquivo <= 5)
+    if (recebe_escolha_arquivo >= 1 && recebe_escolha_arquivo <= 6)
     {
         int h, i, j;
         string x;
@@ -176,17 +160,16 @@ void ShellSort(vector <string> &Lista_String, vector <int> &Lista_Int, int receb
 
                 while (j >= h && Lista_String[j - h] > x)
                 {
-                    comparacoes++;
+                    comparacoes += 2;
                     Lista_String[j] = Lista_String[j - h];
                     j = j - h;
                     trocas++;
                 }
                 Lista_String[j] = x;
-                trocas++;
             }
         }
     }
-    else if (recebe_escolha_arquivo >= 6 && recebe_escolha_arquivo <= 17)
+    else if (recebe_escolha_arquivo >= 7 && recebe_escolha_arquivo <= 17)
     {
         int h, i, j, x;
 
@@ -203,13 +186,12 @@ void ShellSort(vector <string> &Lista_String, vector <int> &Lista_Int, int receb
 
                 while (j >= h && Lista_Int[j - h] > x)
                 {
-                    comparacoes++;
+                    comparacoes += 2;
                     Lista_Int[j] = Lista_Int[j - h];
                     j = j - h;
                     trocas++;
                 }
                 Lista_Int[j] = x;
-                trocas++;
             }
         }
     }
@@ -223,11 +205,18 @@ void QuickSort_String(vector <string> &Lista_String, int esquerda, int direita)
 
     while (i <= j)
     {
+        comparacoes++;
         while (Lista_String[i] < pivo)
+        {
             i++;
+            comparacoes++;
+        }
         while (Lista_String[j] > pivo)
+        {
             j--;
             comparacoes++;
+        }
+        comparacoes++;
         if (i <= j)
         {
             aux = Lista_String[i];
@@ -239,10 +228,9 @@ void QuickSort_String(vector <string> &Lista_String, int esquerda, int direita)
         }
     };
 
-    comparacoes++;
     if (esquerda < j)
         QuickSort_String(Lista_String, esquerda, j);
-    comparacoes++;
+
     if (i < direita)
         QuickSort_String(Lista_String, i, direita);
 }
@@ -255,11 +243,18 @@ void QuickSort_Int(vector <int> &Lista_Int, int esquerda, int direita)
     
     while (i <= j)
     {
+        comparacoes++;
         while (Lista_Int[i] < pivo)
+        {
             i++;
+            comparacoes++;
+        }
         while (Lista_Int[j] > pivo)
+        {
             j--;
             comparacoes++;
+        }
+        comparacoes++;
         if (i <= j)
         {
             aux = Lista_Int[i];
@@ -271,10 +266,9 @@ void QuickSort_Int(vector <int> &Lista_Int, int esquerda, int direita)
         }
     };
 
-    comparacoes++;
     if (esquerda < j)
         QuickSort_Int(Lista_Int, esquerda, j);
-    comparacoes++;
+    
     if (i < direita)
         QuickSort_Int(Lista_Int, i, direita); 
 }

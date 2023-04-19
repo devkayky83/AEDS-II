@@ -1,0 +1,177 @@
+
+ Método utilizado: Bubble Sort
+
+ Arquivo: DicionarioAleatorio-29855.txt
+
+ Trocas: 224820717
+
+ Comparações: 445645585
+
+ Tempo Total: 60.01 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Bubble Sort
+
+ Arquivo: DicionarioInversamenteOrdenado-29855.txt
+
+ Trocas: 445632473
+
+ Comparações: 445645585
+
+ Tempo Total: 94.432 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Bubble Sort
+
+ Arquivo: DicionarioOrdenado-29855.txt
+
+ Trocas: 0
+
+ Comparações: 445645585
+
+ Tempo Total: 16.29 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Bubble Sort
+
+ Arquivo: DicionarioOrdenado-261791.txt
+
+ Trocas: 38436
+
+ Comparações: 34267132945
+
+ Tempo Total: 1044.73 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Bubble Sort
+
+ Arquivo: ListaAleatoria-1000.txt
+
+ Trocas: 253680
+
+ Comparações: 499500
+
+ Tempo Total: 0.006 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Bubble Sort
+
+ Arquivo: ListaAleatoria-10000.txt
+
+ Trocas: 24691294
+
+ Comparações: 49995000
+
+ Tempo Total: 0.652 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Bubble Sort
+
+ Arquivo: ListaAleatoria-100000.txt
+
+ Trocas: 2469223314
+
+ Comparações: 4999950000
+
+ Tempo Total: 71.202 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Bubble Sort
+
+ Arquivo: ListaInversamenteOrdenada-1000.txt
+
+ Trocas: 499500
+
+ Comparações: 499500
+
+ Tempo Total: 0.007 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Bubble Sort
+
+ Arquivo: ListaInversamenteOrdenada-10000.txt
+
+ Trocas: 49995000
+
+ Comparações: 49995000
+
+ Tempo Total: 0.754 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Bubble Sort
+
+ Arquivo: ListaInversamenteOrdenada-100000.txt
+
+ Trocas: 4999950000
+
+ Comparações: 4999950000
+
+ Tempo Total: 87.472 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Bubble Sort
+
+ Arquivo: ListaOrdenada-1000.txt
+
+ Trocas: 0
+
+ Comparações: 499500
+
+ Tempo Total: 0.003 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Bubble Sort
+
+ Arquivo: ListaOrdenada-10000.txt
+
+ Trocas: 0
+
+ Comparações: 49995000
+
+ Tempo Total: 0.326 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Bubble Sort
+
+ Arquivo: ListaOrdenada-100000.txt
+
+ Trocas: 0
+
+ Comparações: 4999950000
+
+ Tempo Total: 39.415 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Bubble Sort
+
+ Arquivo: ListaQuaseOrdenada-1000.txt
+
+ Trocas: 26981
+
+ Comparações: 499500
+
+ Tempo Total: 0.003 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Bubble Sort
+
+ Arquivo: ListaQuaseOrdenada-10000.txt
+
+ Trocas: 3069699
+
+ Comparações: 49995000
+
+ Tempo Total: 0.368 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Bubble Sort
+
+ Arquivo: ListaQuaseOrdenada-100000.txt
+
+ Trocas: 308491124
+
+ Comparações: 4999950000
+
+ Tempo Total: 40.224 segundos/milissegundos
+
+ -----------------------------------------------

@@ -1,0 +1,243 @@
+
+ Método utilizado: Merge Sort
+
+ Arquivo: DicionarioAleatorio-29855.txt
+
+ Trocas: 444912
+
+ Comparações: 474766
+
+ Tempo Total: 0.334 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Merge Sort
+
+ Arquivo: DicionarioAleatorio-261791.txt
+
+ Trocas: 4711885
+
+ Comparações: 4973675
+
+ Tempo Total: 3.583 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Merge Sort
+
+ Arquivo: DicionarioInversamenteOrdenado-29855.txt
+
+ Trocas: 444912
+
+ Comparações: 474766
+
+ Tempo Total: 0.238 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Merge Sort
+
+ Arquivo: DicionarioInversamenteOrdenado-261791.txt
+
+ Trocas: 4711885
+
+ Comparações: 4973675
+
+ Tempo Total: 3.199 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Merge Sort
+
+ Arquivo: DicionarioOrdenado-29855.txt
+
+ Trocas: 444912
+
+ Comparações: 474766
+
+ Tempo Total: 0.248 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Merge Sort
+
+ Arquivo: DicionarioOrdenado-261791.txt
+
+ Trocas: 4711885
+
+ Comparações: 4973675
+
+ Tempo Total: 3.919 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Merge Sort
+
+ Arquivo: ListaAleatoria-1000.txt
+
+ Trocas: 9976
+
+ Comparações: 10975
+
+ Tempo Total: 0 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Merge Sort
+
+ Arquivo: ListaAleatoria-10000.txt
+
+ Trocas: 133616
+
+ Comparações: 143615
+
+ Tempo Total: 0.007 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Merge Sort
+
+ Arquivo: ListaAleatoria-100000.txt
+
+ Trocas: 1668928
+
+ Comparações: 1768927
+
+ Tempo Total: 0.135 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Merge Sort
+
+ Arquivo: ListaAleatoria-1000000.txt
+
+ Trocas: 19951424
+
+ Comparações: 20951423
+
+ Tempo Total: 8.455 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Merge Sort
+
+ Arquivo: ListaInversamenteOrdenada-1000.txt
+
+ Trocas: 9976
+
+ Comparações: 10975
+
+ Tempo Total: 0 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Merge Sort
+
+ Arquivo: ListaInversamenteOrdenada-10000.txt
+
+ Trocas: 133616
+
+ Comparações: 143615
+
+ Tempo Total: 0.006 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Merge Sort
+
+ Arquivo: ListaInversamenteOrdenada-100000.txt
+
+ Trocas: 1668928
+
+ Comparações: 1768927
+
+ Tempo Total: 0.172 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Merge Sort
+
+ Arquivo: ListaInversamenteOrdenada-1000000.txt
+
+ Trocas: 19951424
+
+ Comparações: 20951423
+
+ Tempo Total: 8.484 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Merge Sort
+
+ Arquivo: ListaOrdenada-1000.txt
+
+ Trocas: 9976
+
+ Comparações: 10975
+
+ Tempo Total: 0 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Merge Sort
+
+ Arquivo: ListaOrdenada-10000.txt
+
+ Trocas: 133616
+
+ Comparações: 143615
+
+ Tempo Total: 0.007 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Merge Sort
+
+ Arquivo: ListaOrdenada-100000.txt
+
+ Trocas: 1668928
+
+ Comparações: 1768927
+
+ Tempo Total: 0.205 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Merge Sort
+
+ Arquivo: ListaOrdenada-1000000.txt
+
+ Trocas: 19951424
+
+ Comparações: 20951423
+
+ Tempo Total: 8.52 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Merge Sort
+
+ Arquivo: ListaQuaseOrdenada-1000.txt
+
+ Trocas: 9976
+
+ Comparações: 10975
+
+ Tempo Total: 0 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Merge Sort
+
+ Arquivo: ListaQuaseOrdenada-10000.txt
+
+ Trocas: 133616
+
+ Comparações: 143615
+
+ Tempo Total: 0.008 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Merge Sort
+
+ Arquivo: ListaQuaseOrdenada-100000.txt
+
+ Trocas: 1668928
+
+ Comparações: 1768927
+
+ Tempo Total: 0.2 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Merge Sort
+
+ Arquivo: ListaQuaseOrdenada-1000000.txt
+
+ Trocas: 19951424
+
+ Comparações: 20951423
+
+ Tempo Total: 8.515 segundos/milissegundos
+
+ -----------------------------------------------

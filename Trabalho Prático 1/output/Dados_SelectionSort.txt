@@ -1,0 +1,199 @@
+
+ Método utilizado: Selection Sort
+
+ Arquivo: DicionarioAleatorio-29855.txt
+
+ Trocas: 29854
+
+ Comparações: 445645585
+
+ Tempo Total: 12.351 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Selection Sort
+
+ Arquivo: DicionarioAleatorio-261791.txt
+
+ Trocas: 261790
+
+ Comparações: 34267132945
+
+ Tempo Total: 910.302 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Selection Sort
+
+ Arquivo: DicionarioInversamenteOrdenado-29855.txt
+
+ Trocas: 29854
+
+ Comparações: 445645585
+
+ Tempo Total: 13.793 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Selection Sort
+
+ Arquivo: DicionarioInversamenteOrdenado-261791.txt
+
+ Trocas: 261790
+
+ Comparações: 34267132945
+
+ Tempo Total: 982.056 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Selection Sort
+
+ Arquivo: DicionarioOrdenado-29855.txt
+
+ Trocas: 29854
+
+ Comparações: 445645585
+
+ Tempo Total: 10.987 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Selection Sort
+
+ Arquivo: DicionarioOrdenado-261791.txt
+
+ Trocas: 261790
+
+ Comparações: 34267132945
+
+ Tempo Total: 875.586 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Selection Sort
+
+ Arquivo: ListaAleatoria-1000.txt
+
+ Trocas: 999
+
+ Comparações: 499500
+
+ Tempo Total: 0.003 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Selection Sort
+
+ Arquivo: ListaAleatoria-10000.txt
+
+ Trocas: 9999
+
+ Comparações: 49995000
+
+ Tempo Total: 0.308 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Selection Sort
+
+ Arquivo: ListaAleatoria-100000.txt
+
+ Trocas: 99999
+
+ Comparações: 4999950000
+
+ Tempo Total: 33.183 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Selection Sort
+
+ Arquivo: ListaInversamenteOrdenada-1000.txt
+
+ Trocas: 999
+
+ Comparações: 499500
+
+ Tempo Total: 0.003 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Selection Sort
+
+ Arquivo: ListaInversamenteOrdenada-10000.txt
+
+ Trocas: 9999
+
+ Comparações: 49995000
+
+ Tempo Total: 0.31 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Selection Sort
+
+ Arquivo: ListaInversamenteOrdenada-100000.txt
+
+ Trocas: 99999
+
+ Comparações: 4999950000
+
+ Tempo Total: 34.842 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Selection Sort
+
+ Arquivo: ListaOrdenada-1000.txt
+
+ Trocas: 999
+
+ Comparações: 499500
+
+ Tempo Total: 0.003 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Selection Sort
+
+ Arquivo: ListaOrdenada-10000.txt
+
+ Trocas: 9999
+
+ Comparações: 49995000
+
+ Tempo Total: 0.309 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Selection Sort
+
+ Arquivo: ListaOrdenada-100000.txt
+
+ Trocas: 99999
+
+ Comparações: 4999950000
+
+ Tempo Total: 31.994 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Selection Sort
+
+ Arquivo: ListaQuaseOrdenada-1000.txt
+
+ Trocas: 999
+
+ Comparações: 499500
+
+ Tempo Total: 0.004 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Selection Sort
+
+ Arquivo: ListaQuaseOrdenada-10000.txt
+
+ Trocas: 9999
+
+ Comparações: 49995000
+
+ Tempo Total: 0.309 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Selection Sort
+
+ Arquivo: ListaQuaseOrdenada-100000.txt
+
+ Trocas: 99999
+
+ Comparações: 4999950000
+
+ Tempo Total: 33.017 segundos/milissegundos
+
+ -----------------------------------------------

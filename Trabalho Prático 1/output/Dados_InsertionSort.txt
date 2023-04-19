@@ -1,0 +1,191 @@
+
+ Método utilizado: Insertion Sort
+
+ Arquivo: DicionarioAleatorio-29855.txt
+
+ Trocas: 224820717
+
+ Comparações: 224850571
+
+ Tempo Total: 17.444 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Insertion Sort
+
+ Arquivo: DicionarioAleatorio-261791.txt
+
+ Trocas: 17104340861
+
+ Comparações: 17104602651
+
+ Tempo Total: 1343.91 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Insertion Sort
+
+ Arquivo: DicionarioInversamenteOrdenado-29855.txt
+
+ Trocas: 445632473
+
+ Comparações: 445662327
+
+ Tempo Total: 34.639 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Insertion Sort
+
+ Arquivo: DicionarioOrdenado-29855.txt
+
+ Trocas: 0
+
+ Comparações: 29854
+
+ Tempo Total: 0.004 segundos/milissegundos
+
+ -----------------------------------------------
+
+ Método utilizado: Insertion Sort
+
+ Arquivo: DicionarioOrdenado-261791.txt
+
+ Trocas: 38436
+
+ Comparações: 300226
+
+ Tempo Total: 0.031 segundos/milissegundos
+
+ -----------------------------------------------
+
+ Método utilizado: Insertion Sort
+
+ Arquivo: ListaAleatoria-1000.txt
+
+ Trocas: 253680
+
+ Comparações: 254679
+
+ Tempo Total: 0.002 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Insertion Sort
+
+ Arquivo: ListaAleatoria-10000.txt
+
+ Trocas: 24691294
+
+ Comparações: 24701293
+
+ Tempo Total: 0.169 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Insertion Sort
+
+ Arquivo: ListaAleatoria-100000.txt
+
+ Trocas: 2469223314
+
+ Comparações: 2469323313
+
+ Tempo Total: 18.18 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Insertion Sort
+
+ Arquivo: ListaInversamenteOrdenada-1000.txt
+
+ Trocas: 499500
+
+ Comparações: 500499
+
+ Tempo Total: 0.003 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Insertion Sort
+
+ Arquivo: ListaInversamenteOrdenada-10000.txt
+
+ Trocas: 49995000
+
+ Comparações: 50004999
+
+ Tempo Total: 0.342 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Insertion Sort
+
+ Arquivo: ListaInversamenteOrdenada-100000.txt
+
+ Trocas: 4999950000
+
+ Comparações: 5000049999
+
+ Tempo Total: 37.184 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Insertion Sort
+
+ Arquivo: ListaOrdenada-1000.txt
+
+ Trocas: 0
+
+ Comparações: 999
+
+ Tempo Total: 0 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Insertion Sort
+
+ Arquivo: ListaOrdenada-10000.txt
+
+ Trocas: 0
+
+ Comparações: 9999
+
+ Tempo Total: 0 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Insertion Sort
+
+ Arquivo: ListaOrdenada-100000.txt
+
+ Trocas: 0
+
+ Comparações: 99999
+
+ Tempo Total: 0.002 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Insertion Sort
+
+ Arquivo: ListaQuaseOrdenada-1000.txt
+
+ Trocas: 26981
+
+ Comparações: 27980
+
+ Tempo Total: 0.001 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Insertion Sort
+
+ Arquivo: ListaQuaseOrdenada-10000.txt
+
+ Trocas: 3069699
+
+ Comparações: 3079698
+
+ Tempo Total: 0.021 segundos/milissegundos
+
+ -----------------------------------------------
+ Método utilizado: Insertion Sort
+
+ Arquivo: ListaQuaseOrdenada-100000.txt
+
+ Trocas: 308491124
+
+ Comparações: 308591123
+
+ Tempo Total: 2.232 segundos/milissegundos
+
+ -----------------------------------------------
+ 

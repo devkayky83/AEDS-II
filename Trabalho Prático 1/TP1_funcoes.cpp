@@ -8,6 +8,7 @@
 #include "TP1_funcoes_ordena.cpp"
 #include "TP1.hpp"
 
+
 int recebe_escolha_arquivo = 0;
 bool verificacao;
  
