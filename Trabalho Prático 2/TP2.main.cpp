@@ -27,6 +27,7 @@ int main() {
     switch (escolha_menu)
     {
       case 1:
+        Coleta_Informacoes(&Info);
         Inserir(&Raiz, Info);
         Salva_Arquivo(&No, &Raiz.Raiz->Info);
       break;

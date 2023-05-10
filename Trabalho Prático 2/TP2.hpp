@@ -43,6 +43,7 @@ typedef struct TipoArvore
 void Menu_Principal();
 void Menu_Busca();
 void Menu_Remover();
+void Coleta_Informacoes(TipoInfo *Info);
 void InserirDireita(TipoNo *No, TipoInfo Info);
 void InserirEsquerda(TipoNo *No, TipoInfo Info);
 void Inserir(TipoArvore *Raiz, TipoInfo Info);

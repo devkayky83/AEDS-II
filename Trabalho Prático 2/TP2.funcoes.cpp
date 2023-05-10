@@ -87,48 +87,48 @@ void InserirDireita(TipoNo *No, TipoInfo Info)
     }
 }
 
-void Inserir(TipoArvore *Raiz, TipoInfo Info)
+void Coleta_Informacoes(TipoInfo *Info)
 {
     int escolha;
 
     system("cls");
     cout << "\n Digite a mátricula do funcionário: ";
-    cin >> Info.matricula;
+    cin >> Info->matricula;
 
     system("cls");
     cout << "\n Digite o nome do funcionário: ";
     cin.ignore();
-    cin.getline(Info.nome, 50);
+    cin.getline(Info->nome, 50);
 
     system("cls");
     cout << "\n Digite o cpf do funcionário: ";
-    cin >> Info.cpf;
+    cin >> Info->cpf;
 
     system("cls");
     cout << "\n Digite o cargo que o mesmo ocupa: ";
     cin.ignore();
-    cin.getline(Info.cargo, 30);
+    cin.getline(Info->cargo, 30);
 
     system("cls");
     cout << "\n Digite o telefone do funcionário: ";
-    cin >> Info.telefone;
+    cin >> Info->telefone;
 
     system("cls");
     cout << "\n Digite o estado onde mora o funcionário: ";
     cin.ignore();
-    cin.getline(Info.Endereco.estado, 20);
+    cin.getline(Info->Endereco.estado, 20);
 
     system("cls");
     cout << "\n Digite a cidade do funcionário: ";
-    cin.getline(Info.Endereco.cidade, 20);
+    cin.getline(Info->Endereco.cidade, 20);
 
     system("cls");
     cout << "\n Digite o bairro do funcionário: ";
-    cin.getline(Info.Endereco.bairro, 30);
+    cin.getline(Info->Endereco.bairro, 30);
 
     system("cls");
     cout << "\n Digite o número da casa: ";
-    cin >> Info.Endereco.numero;
+    cin >> Info->Endereco.numero;
 
     system("cls");
     cout << "\n Possui logradouro? (1) - Sim, (2) - Não: ";
@@ -138,30 +138,33 @@ void Inserir(TipoArvore *Raiz, TipoInfo Info)
         {
             cout << "\n Digite o logradouro: ";
             cin.ignore();
-            cin.getline(Info.Endereco.logradouro, 50);
+            cin.getline(Info->Endereco.logradouro, 50);
         }
         else
         {
-            *Info.Endereco.logradouro = NULL;
+            *Info->Endereco.logradouro = NULL;
         }
 
         system("cls");
         cout << "\n Digite o CEP da cidade do funcionário: ";
         cin.ignore();
-        cin.getline(Info.Endereco.cep, 10);
+        cin.getline(Info->Endereco.cep, 10);
 
         system("cls");
         cout << "\n Digite o dia do nascimento: ";
-        cin >> Info.Data.dia;
+        cin >> Info->Data.dia;
 
         system("cls");
         cout << "\n Digite o mês do nascimento: ";
-        cin >> Info.Data.mes;
+        cin >> Info->Data.mes;
 
         system("cls");
         cout << "\n Digite o ano do nascimento: ";
-        cin >> Info.Data.ano;
+        cin >> Info->Data.ano;
+}
 
+void Inserir(TipoArvore *Raiz, TipoInfo Info)
+{
     if (Raiz->Raiz == NULL)
     {
         TipoNo *novo = new TipoNo;
@@ -182,7 +185,7 @@ void Inserir(TipoArvore *Raiz, TipoInfo Info)
         }
     }
     cout << "\n Funcionário inserido com sucesso!" << endl;
-    system("pause");
+    Sleep(2000);
 }
 
 void Imprimir(TipoNo *No)
@@ -447,9 +450,9 @@ void Salva_Arquivo(TipoNo *No, TipoInfo *Info)
 
     ofstream ArquivoS;
 
-    ArquivoS.open("Funcionarios.txt", ios::app);
+    ArquivoS.open("Funcionarios.txt", ios::out);
 
-    ArquivoS << "\n           - Funcionário " << contador_funcionario + 1;
+    ArquivoS << "\n           - Funcionário " << contador_funcionario + 1 << " -";
     ArquivoS << "\n -------------------------------------" << endl;
 
     ArquivoS << "\n Nome do funcionário: " << Info->nome;
